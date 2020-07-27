@@ -22,7 +22,7 @@ if(kol > 0 && cP > 0) {
 }
 
 if(god < 18) {
-    console.log(' Niste punoletni')
+    console.log('Niste punoletni')
 }
 else if(god >= 18) {
         if(god % 11 == 0 && god % 7 == 0) {
