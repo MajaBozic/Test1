@@ -11,24 +11,31 @@
 
 // Napomena : proveriti ulazne pod.(validnost kol, cene i god)
 
-let god = 33
-let cP = 300
 let kol = 3
-let Rn
+let cP = 300
+let god = 35
+// let Rcn
+let uCP = cP * kol
 
-if(kol > 0 && cP > 0 && god > 18) {
-    let uCP = cP * kol
+if(kol > 0 && cP > 0) { 
+    // console.log(uCP)
 }
 
-if(god % 7 == 0){
-    Rn = uCP * 0.85
-    console.log("Vas racun je : " + Rn + "din.")
+if(god < 18) {
+    console.log(' Niste punoletni')
 }
-else if(god % 11 == 0) {
-    Rn = uCP * 0.75
-    console.log("Vas racun je : " + Rn + "din.")
-}
-else {
-    Rn = uCP
-    console.log("Vas racun je : " + Rn + "din.")
+else if(god >= 18) {
+        if(god % 11 == 0 && god % 7 == 0) {
+            Rcn = uCP * 0.6
+        }    
+        else if(god % 11 == 0) {
+            Rcn = uCP * 0.75
+        }
+        else if(god % 7 == 0){
+            Rcn = uCP * 0.85
+        }
+        else if(god % 7 !== 0 && god % 11 !== 0) {
+            Rcn = uCP
+        }
+    console.log("Vas racun je : " + Rcn + "din.");
 }
