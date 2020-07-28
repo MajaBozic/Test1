@@ -14,7 +14,7 @@
 
 let kol = 3
 let cP = 300
-let god = 34
+let god = 23
 let Rcn
 let uCP = cP * kol
 
@@ -30,7 +30,7 @@ if(kol > 0 && cP > 0) {
             else if(god % 7 == 0){
                 Rcn = uCP * 0.85
             }
-            else if(god % 7 !== 0 && god % 11 !== 0) {
+            else {
                 Rcn = uCP
             }
         console.log("Vas racun je : " + Rcn + "din.");
