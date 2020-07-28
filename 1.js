@@ -15,7 +15,7 @@
 let kol = 3
 let cP = 300
 let god = 34
-// let Rcn
+let Rcn
 let uCP = cP * kol
 
 if(kol > 0 && cP > 0) { 
